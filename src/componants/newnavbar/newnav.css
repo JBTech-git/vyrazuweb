@@ -1,0 +1,138 @@
+.new_nav{
+    width: 100%;
+    height: 90px;
+    /* background-color: #232f3e; */
+    background:#f0f6f8da;
+    position: relative;
+    top: 40px;
+}
+
+.new_nav .nav_data{
+    display: flex;
+    justify-content:space-between;
+}
+
+.new_nav .nav_data .left_data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.new_nav .nav_data .left_data p{
+    color: #343232;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top:25px;
+}
+
+.left_data img{
+    height:50px;
+    margin-top:20px;
+    
+}
+
+
+/* .rigth_data img{
+    height: 35px;
+} */
+
+.new_nav .nav_data .rigth_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    margin-top: 20px;
+}
+/* .new_nav .nav_data .rigth_data .nav_Searchbar{
+    background-color: #69defe;
+    height: 80px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+} */
+.new_nav .nav_data .rigth_data .nav_Searchbar .btn{
+    width:150px;
+    height: 48px;
+    background-color:#4ec2e9;
+    /* color: #fff; */
+    border: none;
+    outline: none;
+    border-radius:40px ;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.new_nav .nav_data .rigth_data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: .2;
+    /* padding: 20px; */
+}
+.sicon{
+    margin-top: 13px;
+    font-size:20px;
+    color: #343232;
+}
+
+
+
+/* media query */
+@media (max-width:808px){
+    .new_nav{
+        height: 85px;
+    }
+    p{
+       display: none;
+    }
+    img{
+        margin-left: 0%;
+    }
+    .new_nav .nav_data .left_data{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: .4;
+    }
+    
+    .left_data img{
+        height:45px;
+    }
+    .nav_Searchbar{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width:600px) {
+    .bar{
+        display: block;
+    }
+    .dropbar{
+        display: block;
+    }
+}
+
+/* dropbar */
+
+.dropbar{
+    position: absolute;
+    right: 2rem;
+    top: 125px;
+    width:1300px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.bar{
+    height:20px;
+    width: 50px;
+    font-size:25px;
+    color: #4ec2e9;
+    display: none;
+}
